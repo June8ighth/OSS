@@ -1,0 +1,10 @@
+FROM tensorflow/tensorflow:latest-py3-jupyter
+
+WORKDIR /tf/notebooks
+
+# install latest libs
+RUN \
+    apt update -y && apt upgrade -y && \
+    pip install --upgrade pip && \
+    apt install -y git 
+
