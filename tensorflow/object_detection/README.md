@@ -29,6 +29,7 @@
     - on the Colab
     ```
     Add below code snippets in the .ipynb file.
+    
     %load_ext tensorboard
     %tensorboard --logdir ${your log directory}
     ```
