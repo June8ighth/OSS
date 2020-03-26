@@ -6,4 +6,4 @@
 ## Guides
  - [Datasets](datasets.md)
  - [Docker](docker.md)
- - [Object Detection](object_detection.md)
+ - [Object Detection](object_detection/README.md)
