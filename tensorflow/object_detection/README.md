@@ -14,6 +14,24 @@
     - TBD
  3. Configure pipeline
     - TBD
+ 4. Run learning
+    - TBD
+ 5. Monitoring with tensorboard
+    - using docker container
+    ```
+    Replace below log source directory with yours and run it.
+    
+    $ docker run -it --rm --name june8ighth-tensorflow-jupyter-1.0 \
+        -p 56006:6006 \
+        -v ~/gdrive_j8/DeepLearning/models/faster_rcnn_resnet101_pets:/tf/logs \
+        june8ighth/tensorflow:jupyter-1.0 tensorboard --logdir /tf/logs --bind_all
+    ```
+    - on the Colab
+    ```
+    Add below code snippets in the .ipynb file.
+    %load_ext tensorboard
+    %tensorboard --logdir ${your log directory}
+    ```
 
 <!-- 
 ## Prerequisites
