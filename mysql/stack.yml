@@ -11,7 +11,10 @@ services:
       - $PWD/conf.d:/etc/mysql/conf.d
       - ~/Workspace/data/mysql:/var/lib/mysql
     environment:
-      MYSQL_ROOT_PASSWORD: example
+      MYSQL_ROOT_PASSWORD: 1234qwer!
+      MYSQL_DATABASE: j8
+      MYSQL_USER: j8user
+      MYSQL_PASSWORD: 1234qwer!
     ports:
       - 43306:3306
 
