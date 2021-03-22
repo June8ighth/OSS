@@ -1,0 +1,23 @@
+# Use root/example as user/password credentials
+version: '3.1'
+
+services:
+
+  db:
+    image: postgres:alpine
+    restart: always
+    volumes:
+      - $PWD/conf.d/postgresql.conf:/etc/postgresql/postgresql.conf
+      - ~/Workspace/data/postgres:/var/lib/postgresql/data
+    environment:
+      POSTGRES_DB: j8_db
+      POSTGRES_USER: j8_user
+      POSTGRES_PASSWORD: 1234qwer!
+    ports:
+      - 45432:5432
+
+  adminer:
+    image: adminer
+    restart: always
+    ports:
+      - 48080:8080
