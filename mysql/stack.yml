@@ -12,8 +12,8 @@ services:
       - ~/Workspace/data/mysql:/var/lib/mysql
     environment:
       MYSQL_ROOT_PASSWORD: 1234qwer!
-      MYSQL_DATABASE: j8
-      MYSQL_USER: j8user
+      MYSQL_DATABASE: j8_db
+      MYSQL_USER: j8_user
       MYSQL_PASSWORD: 1234qwer!
     ports:
       - 43306:3306
